@@ -11,14 +11,21 @@ export default function FormattedDate(props) {
     "Saturday",
   ];
   let day = days[props.date.getDay()];
-  let hours = props.date.getHours();
+  let hours = (props.date.getHours() + 24) % 12 || 12;
   let minutes = props.date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+  let dayOrNight = "AM";
+  if (props.date.getHours() < 13) {
+    dayOrNight = "AM";
+  }
+  if (props.date.getHours() > 12) {
+    dayOrNight = "PM";
+  }
   return (
     <div>
-      {day} {hours}:{minutes}
+      {day} {hours}:{minutes} {dayOrNight}
     </div>
   );
 }
