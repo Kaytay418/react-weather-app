@@ -10,11 +10,11 @@ export default function WeatherInfo(props) {
         <li>
           <FormattedDate date={props.data.date} />
         </li>
-        <li className="text-capitalize">{props.data.description}</li>
+        <li className="capitalize">{props.data.description}</li>
       </ul>
       <div className="row mt-3">
         <div className="col-6">
-          <img src={Images[props.data.icon]}></img>
+          <img src={Images[props.data.icon]} alt={props.data.description} />
           <span className="temp">{Math.round(props.data.temperature)}</span>
           <span className="unit">°F</span>
         </div>
