@@ -23,13 +23,12 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    let apiKey = "6c5702b8e0bdf208e797742914ea7ce";
+    let apiKey = `6c5702b8e0bdf208e797742914ea7ce`;
     let lon = props.coordinates.lon;
     let lat = props.coordinates.lat;
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
     axios.get(apiUrl).then(handleResponse);
-
     return null;
   }
 }

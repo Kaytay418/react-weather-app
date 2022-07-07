@@ -24,8 +24,8 @@ export default function FormattedDate(props) {
     dayOrNight = "PM";
   }
   return (
-    <div>
-      {day} {hours}:{minutes} {dayOrNight}
+    <div className="update">
+      Last Updated: {day} {hours}:{minutes} {dayOrNight}
     </div>
   );
 }

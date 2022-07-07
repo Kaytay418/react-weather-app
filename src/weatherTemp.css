@@ -1,18 +1,15 @@
 .WeatherTemperature {
-  position: relative;
-  left: 90px;
-  top: -80px;
-}
-
-.WeatherTemperature .temperature {
+  text-align: center;
   font-size: 50px;
 }
 
 .WeatherTemperature .unit {
   position: relative;
-  top: -25px !important;
+  top: 35px;
+  right: 50px;
 }
 
 .WeatherTemperature a {
   text-decoration: none;
+  color: grey;
 }

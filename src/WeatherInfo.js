@@ -6,27 +6,21 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props) {
   return (
     <div className="weatherInfo">
-      <h1>{props.data.city}</h1>
+      <h1 className="text-center">{props.data.city}</h1>
       <ul>
-        <li>
+        <li className="text-center mb-4">
           <FormattedDate date={props.data.date} />
         </li>
-        <li className="capitalize">{props.data.description}</li>
+        <li className="text-capitalize description">
+          {props.data.description}
+        </li>
       </ul>
-      <div className="row mt-3">
-        <div className="col-6">
-          <div>
-            <WeatherIcon code={props.data.icon} size={52} />
-          </div>
-          <div>
-            <WeatherTemperature fahrenheit={props.data.temperature} />
-          </div>
-        </div>
-        <div className="col-6">
-          <ul>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {Math.round(props.data.wind)}</li>
-          </ul>
+      <WeatherIcon code={props.data.icon} size={52} />
+      <WeatherTemperature fahrenheit={props.data.temperature} />
+      <div className="row mb-4 extras">
+        <div className="col-5 humid">Humidity: {props.data.humidity}%</div>
+        <div className="col-5 wind">
+          Wind: {Math.round(props.data.wind * 2.23694)} mph
         </div>
       </div>
     </div>
