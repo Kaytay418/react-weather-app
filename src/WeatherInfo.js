@@ -8,10 +8,10 @@ export default function WeatherInfo(props) {
     <div className="weatherInfo">
       <h1 className="text-center">{props.data.city}</h1>
       <ul>
-        <li className="text-center mb-4">
+        <li className="text-center">
           <FormattedDate date={props.data.date} />
         </li>
-        <li className="text-capitalize description">
+        <li className="text-capitalize text-center description">
           {props.data.description}
         </li>
       </ul>
