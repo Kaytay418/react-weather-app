@@ -1,13 +1,26 @@
 body {
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgb(63, 61, 61, 0.9) 65%
+  );
   font-family: VisbyRoundCF-Medium, Arial, Helvetica, sans-serif;
 }
 
 .App {
   max-width: 600px;
   margin: 30px auto;
+  color: #fff;
 }
 
 .App footer {
   font-size: 10px;
   margin: 10px 0;
+  color: black;
+  text-align: center;
+}
+
+.App footer a {
+  color: black;
+  font-weight: 600;
 }

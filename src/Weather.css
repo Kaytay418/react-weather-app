@@ -1,7 +1,7 @@
 .weather {
-  border: 1px solid black;
   padding: 16px;
   border-radius: 10px;
+  box-shadow: 0px 0px 150px rgb(243, 243, 243);
 }
 
 .weather form {
@@ -9,7 +9,7 @@
 }
 
 .weather h1 {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 29px;
 }
@@ -34,14 +34,15 @@
   margin: 10px auto;
   position: relative;
   left: 162px;
-  top: -12px;
+  top: -10px;
 }
 
 .weather .temp {
-  font-size: 64px;
+  font-size: 60px;
   line-height: 64px;
   position: relative;
   left: 60px;
+  top: 5px;
 }
 
 .weather .unit {
@@ -63,17 +64,17 @@
 }
 
 .extras .humid {
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 5px;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .extras .wind {
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 5px;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .weatherInfo .update {
@@ -84,4 +85,14 @@
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 30px;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+.form-control {
+  padding: 10px;
 }
